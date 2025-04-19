@@ -9,6 +9,6 @@ public class Naul implements ModInitializer {
     @Override
     public void onInitialize() {
         Logger Logger = LogManager.getLogger();
-        Logger.info("No Anvil Expensive, No 39 Limit!");
+        Logger.info("Limitless Anvil success to load.");
     }
 }
