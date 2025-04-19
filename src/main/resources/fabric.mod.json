@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "neul",
+  "version": "${version}",
+  "name": "No-Enchatment-Upper-Limit",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/neul/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.txttext.neul.client.NaulClient"
+    ],
+    "main": [
+      "com.txttext.neul.Naul"
+    ]
+  },
+  "mixins": [
+    "neul.mixins.json",
+    {
+      "config": "neul.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
